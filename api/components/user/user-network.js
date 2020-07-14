@@ -2,11 +2,15 @@ const express = require('express')
 
 //Responses
 const response = require('../../../network/response')
+//Controller
+const Controller = require('./user-controller')
+
 
 const user = express.Router()
 
 user.get('/', (req, res) => {
-    response.success(req, res, 'Server running...', 200)
+    const list = Controller.list()
+    response.success(req, res, list, 200)
 })
 
 module.exports = {
