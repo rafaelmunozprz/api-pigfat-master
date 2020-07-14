@@ -11,6 +11,10 @@
   "dependencies": {
     "bcrypt": "^5.0.0",
     "express": "^4.17.1",
+<<<<<<< HEAD
     "mongoose": "^5.9.24"
+=======
+    "mongoose": "^5.9.23"
+>>>>>>> d9897308a145fcebfe46dccac68a5eb88f4d6167
   }
 }
